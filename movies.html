@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can link to your stylesheet if you have one -->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <style>
+        /* Added CSS for navbar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: rgb(220, 220, 220);
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            height: 40px; /* Adjust as needed */
+        }
+
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu li {
+            margin-right: 20px;
+        }
+
+        .menu li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #333;
+                width: 100%;
+                padding: 10px;
+            }
+
+            .menu li {
+                margin: 10px 0;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .menu-btn {
+                display: none;
+            }
+
+            .menu-btn:checked ~ .menu {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+    <a href="#" class="logo">
+        <img src="img/logo.png" alt="Logo">
+    </a>
+
+    <input type="checkbox" class="menu-btn" id="menu-btn"/>
+    <label class="menu-icon" for="menu-btn">
+        <span class="nav-icon">&#9776;</span> <!-- Hamburger icon -->
+    </label>
+
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+    </ul>
+</nav>
+
+<!-- Rest of your content -->
+<!-- Movies Section, Buttons, Footer, etc. -->
+
+ <!-- Movies Section -->
+    <div class="movies-heading">
+        <h2>Movies</h2>
+    </div>
+
+    <section id="movies-list">
+        <!--box-1------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                
+                 <a href="img/" onclick="playVideo(event)">
+                <img src="img/love-at-first-sight.jpg">
+            </div>
+            <!--text--------->Love at first sight
+            <a href="#">
+                
+            </a>
+        </div>
+         
+		  <!--box-2------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                
+                 <a href="img/" onclick="playVideo(event)">
+                <img src="img/">
+            </div>
+            <!--text--------->
+            <a href="#">
+                
+            </a>
+        </div>
+		
+		 <!--box-3------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+               
+                 <a href="img/" onclick="playVideo(event)">
+                <img src="img/">
+            </div>
+            <!--text--------->
+            <a href="#">
+                
+            </a>
+        </div>
+		 <!--box-4------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+               
+                 <a href="img/" onclick="playVideo(event)">
+                <img src="img/">
+            </div>
+            <!--text--------->
+            <a href="#">
+                
+            </a>
+        </div>
+		 <!--box-5------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                
+                 <a href="img/" onclick="playVideo(event)">
+                <img src="img/">
+            </div>
+            <!--text--------->
+            <a href="#">
+                
+            </a>
+        </div>
+		
+
+    </section>
+
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+        
+    </section>
+
+    <!-- Buttons -->
+    <div class="btns">
+        <a href="index.html">Previous</a>
+     
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p></p>
+        <p>Copyright 2024 - SNJmovies</p>
+    </footer>
+
+</body>
+
+</html>
