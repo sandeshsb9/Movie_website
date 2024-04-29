@@ -3,7 +3,7 @@
 Welcome to the Sbmovies repository! This project is created and maintained by **sandeshsb9**.
 
 ![Project Image 1](img/project-img1.png)
-![Project Image 2](project_img02.png)
+![Project Image 2](img/project_img02.png)
 
 ## Project Structure
 - **img**: Contains images used in the project.
