@@ -6,7 +6,7 @@ Welcome to the repository! This project is created and maintained by **sandeshsb
 
 This is a website where you can find information about various movies.
 
-![Screenshot of the website](Movie_website/img/view%20web.png)
+![Screenshot of the website](https://github.com/sandeshsb9/Movie_website/blob/master/img/view%20web.png)
 
 
 ## Contributing
