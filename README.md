@@ -2,7 +2,11 @@
 
 Welcome to the repository! This project is created and maintained by **sandeshsb9**.
 
-![Project Image 1](img/view web.png)
+# Movie Website
+
+This is a website where you can find information about various movies.
+
+![Screenshot of the website](Movie_website/img/view%20web.png)
 
 
 ## Contributing
