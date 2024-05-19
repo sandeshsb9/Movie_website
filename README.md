@@ -1,16 +1,9 @@
-# Sbmovies
+# SB COOPERATION
 
-Welcome to the Sbmovies repository! This project is created and maintained by **sandeshsb9**.
+Welcome to the repository! This project is created and maintained by **sandeshsb9**.
 
-![Project Image 1](img/project-img1.png)
-![Project Image 2](img/project_img02.png)
+![Project Image 1](img/view web.png)
 
-## Project Structure
-- **img**: Contains images used in the project.
-- **index.html**: Main HTML file for the project.
-- **movies.html**: HTML file for displaying movies.
-- **script.js**: JavaScript file containing project scripts.
-- **styles.css**: CSS file for styling the project.
 
 ## Contributing
 If you'd like to contribute to this project, feel free to open an issue or submit a pull request.
