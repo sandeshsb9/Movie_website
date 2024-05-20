@@ -17,4 +17,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-**Thank you for checking out Sbmovies! If you have any questions or suggestions, feel free to reach out.**
+**Thank you for checking out thsi reposittory ! If you have any questions or suggestions, feel free to reach out.**
