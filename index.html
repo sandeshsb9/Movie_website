@@ -1,390 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SB COOPERATION</title>
-     <link rel="icon" type="image/jpg" href="img/logo.jpg">
-    <link rel="stylesheet" href="styles.css"> <!-- You can link to your stylesheet if you have one -->
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-    <style>
-        /* Added CSS for navbar */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+    <link rel="icon" type="image/jpg" href="img/logo.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- You can link to your stylesheet if you have one -->
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-        nav {
-            background-color: rgb(220, 220, 220);
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-        }
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="img/logo.jpg" alt="Logo" />
+        <span class="logo-text">SB COOPERATION</span>
+      </a>
 
-        .logo img {
-            height: 40px; /* Adjust as needed */
-        }
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn">
+        <span class="nav-icon">&#9776;</span>
+        <!-- Hamburger icon -->
+      </label>
 
-        .menu {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        .menu li {
-            margin-right: 20px;
-        }
-
-        .menu li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .menu-icon {
-            display: none;
-            cursor: pointer;
-        }
-
-        @media screen and (max-width: 768px) {
-            .menu {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                background-color: #333;
-                width: 100%;
-                padding: 10px;
-            }
-
-            .menu li {
-                margin: 10px 0;
-            }
-
-            .menu-icon {
-                display: block;
-            }
-
-            .menu-btn {
-                display: none;
-            }
-
-            .menu-btn:checked ~ .menu {
-                display: flex;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-<!-- Navigation -->
-<nav>
-    <a href="img/logo.jpg" class="logo">
-        <img src="img/logo.jpg"alt="Logo">
-		 <span class="logo-text">SB COOPERATION</span>
-    </a>
-
-    <input type="checkbox" class="menu-btn" id="menu-btn"/>
-    <label class="menu-icon" for="menu-btn">
-        <span class="nav-icon">&#9776;</span> <!-- Hamburger icon -->
-    </label>
-
-    <ul class="menu">
+      <ul class="menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="englishmovies.html">English Movies</a></li>
-		<li><a href="indianmovies.html">Indain Movies</a></li>
-		<li><a href="anime.html">Anime</a></li>
-    </ul>
-</nav>
+        <li><a href="">English Movies</a></li>
+        <li><a href="">Indian Movies</a></li>
+        <li><a href="">Anime</a></li>
+      </ul>
+    </nav>
 
-<!-- Rest of your content -->
-<!-- Movies Section, Buttons, Footer, etc. -->
-
- <!-- Movies Section -->
+    <!-- Movies Section -->
     <div class="movies-heading">
-        <h2>Movies</h2>
+      <h2>Movies</h2>
     </div>
 
     <section id="movies-list">
-        <!--box-1------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/ " onclick="playVideo(event)">
-                <img src="img/image1.jpg">
-            </div>
-            <!--text---------> The idea of you
-            <a href="#">
-                
-            </a>
+      <!-- Movie Box 1 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie1.html" onclick="playVideo(event)">
+            <img src="img/image1.jpg" alt="The Idea of You" />
+          </a>
         </div>
-         
-		  <!--box-2------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img2.jpg">
-            </div>
-            <!--text--------->Eagle
-            <a href="#">
-                
-            </a>
-        </div>
-		
-		 <!--box-3------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-               
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img3.jpg">
-            </div>
-            <!--text--------->Fighter
-            <a href="#">
-                
-            </a>
-        </div>
-		 <!--box-4------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-               
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img4.jpg">
-            </div>
-            <!--text--------->Heeramandi the diamond bazaar
-            <a href="#">
-                
-            </a>
-        </div>
-		 <!--box-5------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img5.jpg">
-            </div>
-            <!--text--------->Operation Valentine
-            <a href="#">
-                
-            </a>
-        </div>
-		<!--box-6------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img6.jpg">
-            </div>
-            <!--text--------->KGF 2
-            <a href="#">
-                
-            </a>
-        </div>
-		
-		<!--box-7------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img7.jpg">
-            </div>
-            <!--text--------->RRR
-            <a href="#">
-                
-            </a>
-        </div>
-		
-		<!--box-8------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img8.jpg">
-            </div>
-            <!--text--------->Sooryavanshi
-            <a href="#">
-                
-            </a>
-        </div>
-		
-		<!--box-9------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img9.jpg">
-            </div>
-            <!--text--------->Teddy
-            <a href="#">
-                
-            </a>
-        </div>
-		<!--box-10------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img10.jpg">
-            </div>
-            <!--text--------->Drishyam 2
-            <a href="#">
-                
-            </a>
-        </div>
-		<!--box-11------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img11.jpg">
-            </div>
-            <!--text--------->RED
-            <a href="#">
-                
-            </a>
-        </div>
-		<!--box-12------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img12.jpg">
-            </div>
-            <!--text--------->Ala Vaikunthapurramuloo
-            <a href="#">
-                
-            </a>
-        </div>
-		<!--box-13------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img13.jpg ">
-            </div>
-            <!--text--------->Love Aaj kal
-            <a href="#">
-                
-            </a>
-        </div>
-		<!--box-14------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img14.jpg">
-            </div>
-            <!--text--------->Junglee
-            <a href="#">
-                
-            </a>
-        </div>
-		<!--box-16------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img15.jpg">
-            </div>
-            <!--text--------->Notebook
-			
-            <a href="#">
-                
-            </a>
-        </div>
-		<!--box-17------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img16.jpg">
-            </div>
-            <!--text--------->Vinaya Vidheya Rama
-            <a href="#">
-                
-            </a>
-        </div>
-		<!--box-18------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img17.jpg">
-            </div>
-            <!--text--------->Mr Majnu
-            <a href="#">
-                
-            </a>
-        </div>
-		<!--box-19------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img18.jpg">
-            </div>
-            <!--text--------->Animal
-            <a href="#">
-                
-            </a>
-        </div>
-		<!--box-20------------------------>
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                
-                 <a href="img/" onclick="playVideo(event)">
-                <img src="img/img19.jpg">
-            </div>
-            <!--text--------->kaho na pyar hai
-            <a href="#">
-                
-            </a>
-        </div>
-		
+        <p>The Idea of You</p>
+      </div>
 
-    </section>
+      <!-- Movie Box 2 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie2.html" onclick="playVideo(event)">
+            <img src="img/img2.jpg" alt="Eagle" />
+          </a>
+        </div>
+        <p>Eagle</p>
+      </div>
 
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-        
+      <!-- Movie Box 3 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie3.html" onclick="playVideo(event)">
+            <img src="img/img3.jpg" alt="Fighter" />
+          </a>
+        </div>
+        <p>Fighter</p>
+      </div>
+
+      <!-- Movie Box 4 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie4.html" onclick="playVideo(event)">
+            <img src="img/img4.jpg" alt="Heeramandi the Diamond Bazaar" />
+          </a>
+        </div>
+        <p>Heeramandi the Diamond Bazaar</p>
+      </div>
+
+      <!-- Movie Box 5 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie5.html" onclick="playVideo(event)">
+            <img src="img/img5.jpg" alt="Operation Valentine" />
+          </a>
+        </div>
+        <p>Operation Valentine</p>
+      </div>
+
+      <!-- Movie Box 6 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie6.html" onclick="playVideo(event)">
+            <img src="img/img6.jpg" alt="KGF 2" />
+          </a>
+        </div>
+        <p>KGF 2</p>
+      </div>
+
+      <!-- Movie Box 7 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie7.html" onclick="playVideo(event)">
+            <img src="img/img7.jpg" alt="RRR" />
+          </a>
+        </div>
+        <p>RRR</p>
+      </div>
+
+      <!-- Movie Box 8 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie8.html" onclick="playVideo(event)">
+            <img src="img/img8.jpg" alt="Sooryavanshi" />
+          </a>
+        </div>
+        <p>Sooryavanshi</p>
+      </div>
+
+      <!-- Movie Box 9 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie9.html" onclick="playVideo(event)">
+            <img src="img/img9.jpg" alt="Teddy" />
+          </a>
+        </div>
+        <p>Teddy</p>
+      </div>
+
+      <!-- Movie Box 10 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie10.html" onclick="playVideo(event)">
+            <img src="img/img10.jpg" alt="Drishyam 2" />
+          </a>
+        </div>
+        <p>Drishyam 2</p>
+      </div>
+
+      <!-- Movie Box 11 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie11.html" onclick="playVideo(event)">
+            <img src="img/img11.jpg" alt="RED" />
+          </a>
+        </div>
+        <p>RED</p>
+      </div>
+
+      <!-- Movie Box 12 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie12.html" onclick="playVideo(event)">
+            <img src="img/img12.jpg" alt="Ala Vaikunthapurramuloo" />
+          </a>
+        </div>
+        <p>Ala Vaikunthapurramuloo</p>
+      </div>
+
+      <!-- Movie Box 13 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie13.html" onclick="playVideo(event)">
+            <img src="img/img13.jpg" alt="Love Aaj Kal" />
+          </a>
+        </div>
+        <p>Love Aaj Kal</p>
+      </div>
+
+      <!-- Movie Box 14 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie14.html" onclick="playVideo(event)">
+            <img src="img/img14.jpg" alt="Junglee" />
+          </a>
+        </div>
+        <p>Junglee</p>
+      </div>
+
+      <!-- Movie Box 15 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie15.html" onclick="playVideo(event)">
+            <img src="img/img15.jpg" alt="Notebook" />
+          </a>
+        </div>
+        <p>Notebook</p>
+      </div>
+
+      <!-- Movie Box 16 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie16.html" onclick="playVideo(event)">
+            <img src="img/img16.jpg" alt="Vinaya Vidheya Rama" />
+          </a>
+        </div>
+        <p>Vinaya Vidheya Rama</p>
+      </div>
+
+      <!-- Movie Box 17 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie17.html" onclick="playVideo(event)">
+            <img src="img/img17.jpg" alt="Mr Majnu" />
+          </a>
+        </div>
+        <p>Mr Majnu</p>
+      </div>
+
+      <!-- Movie Box 18 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie18.html" onclick="playVideo(event)">
+            <img src="img/img18.jpg" alt="Animal" />
+          </a>
+        </div>
+        <p>Animal</p>
+      </div>
+
+      <!-- Movie Box 19 -->
+      <div class="movies-box">
+        <div class="movies-img">
+          <a href="movie19.html" onclick="playVideo(event)">
+            <img src="img/img19.jpg" alt="Kaho Na Pyaar Hai" />
+          </a>
+        </div>
+        <p>Kaho Na Pyaar Hai</p>
+      </div>
+
+      <!-- Add more movie boxes in the same structure -->
     </section>
 
     <!-- Buttons -->
     <div class="btns">
-        <a href="index.html">previous</a>
-		  <a href="englishmovies.html">Next</a>
-
-     
+      <a href="index.html">Previous</a>
+      <a href="englishmovies.html">Next</a>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>Copyright 2024 - SB COOPERATION </p>
+      <p>&copy; 2024 SB COOPERATION</p>
     </footer>
 
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
